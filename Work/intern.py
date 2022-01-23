@@ -15,7 +15,6 @@ if(b ** 0.5 == a):
 else:
     print(False)
 
-import math
 
 c = [2, 3, 4, 5, 6, 7, 8, 9]
 d = [4, 9, 16, 25, 36, 49, 64, 81]
@@ -27,16 +26,26 @@ if(M2 == N1):
 else:
     print(False)
 
+e = int(input('введите первое число: '))
+f = int(input('введите второе число: '))
+e *= e
+if(e == f):
+    print('Первое число является квадратом второго.')
+else:
+    print('Перво число не является квадратом второго.')
+
 # Даны два числа. Показать большее и меньшее число
 
 number1 = random.randint(1,10)
 number2 = random.randint(1,10)
 if(number1 > number2):
-    print(number1, ' большее')
-    print(number2, ' меньшее')
+    print('Число', number1, ' большее')
+    print('Число', number2, ' меньшее')
+elif(number1 < number2):
+    print('Число', number1,'меньшее ')
+    print('Число', number2,'большее')
 else:
-    print(number1,'меньшее ')
-    print(number2,'большее')
+    print('Числа равны.')
 
 # По заданному номеру дня недели вывести его название
 
@@ -64,9 +73,23 @@ else:
 
 # Найти максимальное из трех чисел
 
-i = 2
-o = 8
-p = 5
+# i = 2
+# o = 8
+# p = 5
+
+# max = i
+# if(i > max):
+#     max = i
+# if(o > max):
+#     max = o
+# if(p > max):
+#     max = p
+
+# print(max)
+
+i = random.randint(1, 10)
+o = random.randint(1, 10)
+p = random.randint(1, 10)
 
 max = i
 if(i > max):
@@ -77,5 +100,4 @@ if(p > max):
     max = p
 
 print(max)
-
 # Написать программу вычисления значения функции y = f(a)
